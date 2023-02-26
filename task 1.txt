@@ -1,0 +1,83 @@
+.Model SMALL 
+
+.STACK 100H
+
+.DATA
+
+
+    
+                        
+      .CODE
+                        
+MAIN PROC
+   
+        MOV  BL ,'U'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+         MOV  BL ,'M'
+        Mov AH,2
+        MOV DL,BL
+        int 21h 
+        
+         MOV  BL ,'M'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+                   
+         MOV  BL ,'E'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+       
+       ;SPACE 
+       
+            Mov AH,2
+            MOV DL,20H
+            INT 21H
+                 
+         MOV  BL ,'H'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+         MOV  BL ,'A'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+         MOV  BL ,'B'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+         MOV  BL ,'I'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+         MOV  BL ,'B'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+        
+         MOV  BL ,'A'
+        Mov AH,2
+        MOV DL,BL
+        int 21h
+        
+        MOV AH,4CH
+        INT 21H
+        
+        main endp
+
+end main
+
+
+
+
+
+
